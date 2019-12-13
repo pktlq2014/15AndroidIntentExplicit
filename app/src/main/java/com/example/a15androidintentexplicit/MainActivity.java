@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity
             {
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.anim_enter, R.anim.anim_exit);
+
             }
         });
     }
